@@ -57,7 +57,14 @@ const addHandlers = () => {
   $('.btn-logOut').on('click', onSignOut)
 }
 
+const navOpen = function (event) {
+  event.preventDefault()
+  $('#Messages').text('Hello').removeClass('failure').addClass('success')
+  // on click sliding animation that reveals nav contents
+}
+
 // export handlers
 module.exports = {
-  addHandlers
+  addHandlers,
+  navOpen
 }

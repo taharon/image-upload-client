@@ -4,6 +4,8 @@ const store = require('../store')
 const signUpSuccess = function (data) {
   $('#Messages').text('Signed up Succesfully, you have to Log in').removeClass('failure').addClass('success')
   $('.sign-up, sign-in').trigger('reset')
+  $('.sign-up').hide()
+  $('.sign-in').show()
 }
 const signUpFailure = function () {
   $('#Messages').text('Error Signing up').removeClass('success').addClass('failure')
