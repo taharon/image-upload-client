@@ -1,4 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
+
+$error: #f00;
+$success: #0F9D58;
+
 .divider-text {
     position: relative;
     text-align: center;
@@ -28,4 +32,12 @@
 .btn-twitter {
     background-color: #42AEEC;
     color: #fff;
+}
+
+.failure {
+  color: $error;
+}
+
+.success {
+  color: $success;
 }

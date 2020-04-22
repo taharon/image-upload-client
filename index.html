@@ -19,12 +19,19 @@
 </head>
 
 <body>
+  <!-- Auth Messages -->
+  <section>
+  <h4 id='Messages' class='messageBoard'></h4>
+  </section>
   <section class="Auth">
     <div class="container">
       <br>
       <hr>
       <div class="card bg-light">
         <article class="card-body mx-auto" style="max-width: 400px;">
+          <p class="divider-text">
+            <span class="bg-light">Sign In</span>
+          </p>
           <form class="sign-in">
          <!-- form-group -->
             <div class="form-group input-group">
@@ -47,7 +54,7 @@
             <!-- form-group -->
           </form>
           <p class="divider-text">
-            <span class="bg-light">OR</span>
+            <span class="bg-light">Sign Up</span>
           </p>
           <form class="sign-up">
          <!-- form-group -->
@@ -77,6 +84,31 @@
             </div>
             <!-- form-group -->
           </form>
+          <p class="divider-text">
+            <span class="bg-light">Change Password</span>
+          </p>
+          <form class="change-Pw">
+          <!-- form-group -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+              </div>
+              <input name="passwords[old]" class="form-control" placeholder="Current password" type="password" required="required">
+            </div>
+            <!-- form-group -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+              </div>
+              <input name="passwords[new]" class="form-control" placeholder="New password" type="password" required="required">
+            </div>
+            <!-- form-group -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block btn-changePw"> Change</button>
+            </div>
+            <!-- form-group -->
+          </form>
+            <button type="button" class="btn btn-info btn-block btn-logOut">Log Out</button>
         </article>
       </div>
     </div>
