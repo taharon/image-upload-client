@@ -1,0 +1,8 @@
+{{#each uploads as |upload|}}
+  <div id="{{upload._id}}" class="col mb-4">
+    <img src="{{upload.imageUrl}}">
+    <p class="divider-text">
+      <span class="bg-light">"{{upload.tag}}"</span>
+    </p>
+  </div>
+{{/each}}
