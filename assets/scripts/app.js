@@ -8,4 +8,7 @@ $(() => {
   authEvents.addHandlers()
   $('#navsign-in').on('click', navEvents.onSignIn)
   $('#navsign-up').on('click', navEvents.onSignUp)
+  $('#navUpload').on('click', navEvents.onUpload)
+  $('#navFileUpdate').on('click', navEvents.onUpdate)
+  $('#navViewAll').on('click', navEvents.onViewAll)
 })
