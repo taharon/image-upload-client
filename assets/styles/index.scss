@@ -46,7 +46,10 @@ $success: #0F9D58;
 .btn-logOut,
 .sign-in,
 .sign-up,
-.Auth {
+.Auth,
+.settings,
+#navUpload,
+#navViewAll {
   display: none;
 }
 
@@ -103,6 +106,7 @@ $success: #0F9D58;
   padding-bottom: 6px;
   vertical-align: middle;
   border: none;
+  margin-right: 5px;
 }
 .navbar .nav .btn-primary:hover, .navbar .nav .btn-primary:focus {
   color: #fff;
@@ -256,4 +260,16 @@ $success: #0F9D58;
   .navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
     display: block;
   }
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.image {
+  width: 200px;
+}
+
+img {
+  width: 400px;
 }
