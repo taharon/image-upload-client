@@ -27,6 +27,7 @@ const onViewAll = event => {
 
 const onUpdateUpload = event => {
   event.preventDefault()
+  console.log($(event.target))
   const id = $(event.target).data('id')
   const formData = new FormData(event.target)
   console.log(formData)
@@ -39,8 +40,16 @@ const onDeleteUpload = event => {
   event.preventDefault()
   const id = $(event.target).data('id')
   api.deleteUpload(id)
-    .then(ui.deleteUploadSuccess)
+    .then(() => {
+      ui.deleteUploadSuccess(id)
+    })
     .catch(ui.deleteUploadFailure)
+}
+
+const onUpdateForm = event => {
+  event.preventDefault()
+  const id = $(event.target).data('id')
+  ui.updateForm(id)
 }
 
 module.exports = {
@@ -48,5 +57,6 @@ module.exports = {
   onCreateUpload,
   onViewAll,
   onUpdateUpload,
-  onDeleteUpload
+  onDeleteUpload,
+  onUpdateForm
 }

@@ -13,4 +13,7 @@ $(() => {
   $('#navViewAll').on('click', uploadEvents.onViewAll)
   $('#navFileUpdate').on('click', uploadEvents.onUpdate)
   $('.gallery').on('submit', '#upload-btn', uploadEvents.onCreateUpload)
+  $('.gallery').on('click', '.update-btn', uploadEvents.onUpdateForm)
+  $('.gallery').on('submit', '.update-form', uploadEvents.onUpdateUpload)
+  $('.gallery').on('click', '.delete-btn', uploadEvents.onDeleteUpload)
 })

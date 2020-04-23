@@ -1,8 +1,4 @@
-{{#each uploads as |upload|}}
-  <div id="{{upload._id}}" class="col mb-4 image">
     <img src="{{upload.imageUrl}}">
     <p class="bg-light">Tag: {{upload.tag}}</p>
     <button data-id="{{upload._id}}" class="btn btn-warning btn-block update-btn" type="button" value="Update">Update</button>
     <button data-id="{{upload._id}}" class="btn btn-danger btn-block delete-btn" type="button" value="Delete">Delete</button>
-  </div>
-{{/each}}
