@@ -1,4 +1,8 @@
-    <img src="{{upload.imageUrl}}">
-    <p class="bg-light">Tag: {{upload.tag}}</p>
-    <button data-id="{{upload._id}}" class="btn btn-warning btn-block update-btn" type="button" value="Update">Update</button>
-    <button data-id="{{upload._id}}" class="btn btn-danger btn-block delete-btn" type="button" value="Delete">Delete</button>
+<h5>{{upload.title}}</h5>
+<img src="{{upload.imageUrl}}">
+<p class="bg-light">Owner: {{upload.owner}}</p>
+<p class="bg-light">Tag: {{upload.tag}}</p>
+<p class="bg-light">Date created: {{upload.createdAt}}</p>
+<p class="bg-light">date modified: {{upload.updatedAt}}</p>
+<button data-id="{{upload._id}}" class="btn btn-warning btn-block update-btn" type="button" value="Update">Update</button>
+<button data-id="{{upload._id}}" class="btn btn-danger btn-block delete-btn" type="button" value="Delete">Delete</button>

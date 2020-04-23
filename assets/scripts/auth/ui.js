@@ -13,8 +13,9 @@ const signUpFailure = function () {
 
 const signInSuccess = function (data) {
   $('#Messages').text('Signed in Succesfully').removeClass('failure').addClass('success')
-  $('.change-Pw, .btn-logOut').show()
+  $('#navUpload, #navViewAll, .settings').show()
   $('.sign-up, .sign-in').hide().trigger('reset')
+  $('#navsign-in, #navsign-up, .Auth').hide()
   store.user = data.user
 }
 
@@ -24,7 +25,7 @@ const signInFailure = function () {
 
 const changePWSuccess = function () {
   $('#Messages').text('Changed Password Succesfully').removeClass('failure').addClass('success')
-  $('.change-Pw').trigger('reset')
+  $('#change-Pw').trigger('reset')
 }
 const changePWFailure = function () {
   $('#Messages').text('Error changing Password').removeClass('success').addClass('failure')
@@ -32,8 +33,9 @@ const changePWFailure = function () {
 
 const signOutSuccess = function () {
   $('#Messages').text('Signed out Succesfully').removeClass('failure').addClass('success')
-  $('.change-Pw, .btn-logOut').hide()
-  $('.sign-up, .sign-in').show()
+  $('#navUpload, #navViewAll, .settings').hide()
+  $('#navsign-in, #navsign-up').show()
+  $('form').trigger('reset')
 }
 
 const signOutFailure = function () {
