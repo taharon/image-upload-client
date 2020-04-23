@@ -53,8 +53,8 @@ const onSignOut = function (event) {
 const addHandlers = () => {
   $('.sign-up').on('submit', onSignUp)
   $('.sign-in').on('submit', onSignIn)
-  $('.change-Pw').on('submit', onChangePW)
-  $('.btn-logOut').on('click', onSignOut)
+  $('#change-Pw').on('submit', onChangePW)
+  $('#sign-out').on('submit', onSignOut)
 }
 
 const navOpen = function (event) {

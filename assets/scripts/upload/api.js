@@ -11,7 +11,9 @@ const createUpload = formData => {
     headers: {
       Authorization: `Bearer ` + store.user.token
     },
-    data: formData
+    data: formData,
+    contentType: false,
+    processData: false
   })
 }
 
@@ -34,7 +36,9 @@ const updateUpload = (id, formData) => {
     headers: {
       Authorization: `Bearer ` + store.user.token
     },
-    data: formData
+    data: formData,
+    contentType: false,
+    processData: false
   })
 }
 

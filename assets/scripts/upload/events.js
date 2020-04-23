@@ -3,21 +3,22 @@
 const api = require('./api')
 const ui = require('./ui')
 
-const onCreateForm = event => {
+const onUpload = event => {
   event.preventDefault()
   ui.createForm()
 }
 
 const onCreateUpload = event => {
   event.preventDefault()
-  const formData = FormData($(event.target))
+  console.log(event.target)
+  const formData = new FormData(event.target)
   console.log(formData)
   api.createUpload(formData)
     .then(ui.createUploadSuccess)
     .catch(ui.createUploadFailure)
 }
 
-const onIndexUpload = event => {
+const onViewAll = event => {
   event.preventDefault()
   api.indexUpload()
     .then(ui.indexUploadSuccess)
@@ -27,7 +28,7 @@ const onIndexUpload = event => {
 const onUpdateUpload = event => {
   event.preventDefault()
   const id = $(event.target).data('id')
-  const formData = FormData($(event.target))
+  const formData = new FormData(event.target)
   console.log(formData)
   api.updateUpload(id, formData)
     .then(ui.updateUploadSuccess)
@@ -43,9 +44,9 @@ const onDeleteUpload = event => {
 }
 
 module.exports = {
-  onCreateForm,
+  onUpload,
   onCreateUpload,
-  onIndexUpload,
+  onViewAll,
   onUpdateUpload,
   onDeleteUpload
 }
