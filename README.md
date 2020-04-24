@@ -3,11 +3,11 @@
   Build an app that allows users to upload images onto a virtual file system. Ordinary users can only read/download an image where as Owners can do anything to the images they own.
 
 ## Links
-  Client deployed
-  Client repo https://github.com/SEI-09-hip-hip-array/image-upload-client
+  [Client deployed](https://sei-09-hip-hip-array.github.io/image-upload-client/)
+  [Client repo](https://github.com/SEI-09-hip-hip-array/image-upload-client)
 
-  API deployed https://aqueous-hamlet-25054.herokuapp.com/
-  API repo https://github.com/SEI-09-hip-hip-array/image-upload-api
+  [API deployed](https://aqueous-hamlet-25054.herokuapp.com/)
+  [API repo](https://github.com/SEI-09-hip-hip-array/image-upload-api)
 
   Co-authored by:
   John Lucker github: https://github.com/luckyswims
@@ -43,7 +43,7 @@ Stand up after 9am after morning announcements
 ### Expected Schedule
 Day 1 - work on back end
 Day 2 - work on front end
-Day 3 - debugging & read me
+Day 3 - debugging & documentation
 ### Actual Schedule
 Day 1
   Work on wireframes, ERD, user stories.
@@ -95,10 +95,11 @@ Our ERD shows the relationship between our user and images. In this case there i
 
 # Process Continued...
 ## Tech used
-  - HTML/CSS
+  - Express.js
   - JavaScript
   - AWS
   - Mongodb
+  - HTML/CSS
   - Postman
   - Bootstrap
   - Handlebars
@@ -141,8 +142,11 @@ A reach goal includes, "collaborators" which can be chosen for the images; they 
 Another reach goal is that signed in users would be able to download from AWS.
 
 # Dependencies
-- [express-api-template](https://git.generalassemb.ly/ga-wdi-boston/express-api-template/)
+- [express.js](https://expressjs.com/)
 - [mimetypes](https://www.npmjs.com/package/mime-types)
+- [multer](https://www.npmjs.com/package/multer)
+- [aws sdk](https://www.npmjs.com/package/aws-sdk)
+- [passport](https://www.npmjs.com/package/passport)
 
 # Additional Resources
 

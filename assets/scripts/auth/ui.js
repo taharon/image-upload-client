@@ -33,7 +33,7 @@ const changePWFailure = function () {
 
 const signOutSuccess = function () {
   $('#Messages').text('Signed out Succesfully').removeClass('failure').addClass('success')
-  $('#navUpload, #navViewAll, .settings').hide()
+  $('#navUpload, #navViewAll, .settings, .Auth, .gallery').hide()
   $('#navsign-in, #navsign-up').show()
   $('form').trigger('reset')
 }

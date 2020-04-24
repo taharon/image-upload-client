@@ -7,13 +7,13 @@ const uploadImageTemplate = require('../templates/upload-image.handlebars')
 const updateFormTemplate = require('../templates/update-form.handlebars')
 
 const createForm = function () {
-  $('.gallery').html(uploadImageTemplate)
+  $('.gallery').html(uploadImageTemplate).show()
 }
 const updateForm = function (id) {
-  console.log(store.uploads)
-  console.log(id)
+  // console.log(store.uploads)
+  // console.log(id)
   const upload = store.uploads.find(x => x._id === id)
-  console.log(upload)
+  // console.log(upload)
   const updateFormHtml = updateFormTemplate({ upload })
   $(`#${id}`).html(updateFormHtml)
 }
@@ -21,7 +21,7 @@ const updateForm = function (id) {
 const indexUploadSuccess = (data) => {
   const indexImageHtml = indexImageTemplate({ uploads: data.uploads })
   store.uploads = data.uploads
-  $('.gallery').html(indexImageHtml)
+  $('.gallery').html(indexImageHtml).show()
   $('.Auth').hide()
   $('#Messages').text('Index Succesfully').removeClass('failure').addClass('success')
 }
@@ -30,7 +30,7 @@ const indexUploadFailure = function () {
   $('#Messages').text('Error Indexing').removeClass('success').addClass('failure')
 }
 
-const createUploadSuccess = function () {
+const createUploadSuccess = function (data) {
   $('#Messages').text('Upload Succesful').removeClass('failure').addClass('success')
 }
 

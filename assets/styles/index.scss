@@ -52,6 +52,19 @@ $success: #0F9D58;
 #navViewAll {
   display: none;
 }
+.Auth {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.gallery .card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.gallery .uploads-gallery {
+
+}
 
 .form-control {
   box-shadow: none;
@@ -260,6 +273,9 @@ $success: #0F9D58;
   .navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
     display: block;
   }
+  .Auth, .gallery .card {
+    width: 70%;
+  }
 }
 
 .navbar-nav {
@@ -267,7 +283,8 @@ $success: #0F9D58;
 }
 
 .image {
-  width: 200px;
+  width: 400px;
+  margin: auto;
 }
 
 img {

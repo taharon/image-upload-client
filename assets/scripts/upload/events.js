@@ -10,9 +10,9 @@ const onUpload = event => {
 
 const onCreateUpload = event => {
   event.preventDefault()
-  console.log(event.target)
+  // console.log(event.target)
   const formData = new FormData(event.target)
-  console.log(formData)
+  // console.log(formData)
   api.createUpload(formData)
     .then(ui.createUploadSuccess)
     .catch(ui.createUploadFailure)
@@ -27,10 +27,10 @@ const onViewAll = event => {
 
 const onUpdateUpload = event => {
   event.preventDefault()
-  console.log($(event.target))
+  // console.log($(event.target))
   const id = $(event.target).data('id')
   const formData = new FormData(event.target)
-  console.log(formData)
+  // console.log(formData)
   api.updateUpload(id, formData)
     .then(ui.updateUploadSuccess)
     .catch(ui.updateUploadFailure)
