@@ -4,7 +4,7 @@ const config = require('../config')
 const store = require('../store')
 
 const createUpload = formData => {
-  console.log('in upload/api')
+  // console.log('in upload/api')
   return $.ajax({
     url: config.apiUrl + '/uploads/',
     method: 'POST',
@@ -18,7 +18,7 @@ const createUpload = formData => {
 }
 
 const indexUpload = () => {
-  console.log('in upload/api')
+  // console.log('in upload/api')
   return $.ajax({
     url: config.apiUrl + '/uploads/',
     method: 'GET',
@@ -29,7 +29,7 @@ const indexUpload = () => {
 }
 
 const updateUpload = (id, formData) => {
-  console.log('in upload/api')
+  // console.log('in upload/api')
   return $.ajax({
     url: config.apiUrl + '/uploads/' + id,
     method: 'PATCH',
@@ -43,7 +43,7 @@ const updateUpload = (id, formData) => {
 }
 
 const deleteUpload = id => {
-  console.log('in upload/api')
+  // console.log('in upload/api')
   return $.ajax({
     url: config.apiUrl + '/uploads/' + id,
     method: 'DELETE',
